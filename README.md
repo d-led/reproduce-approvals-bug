@@ -1,0 +1,3 @@
+- build broken by design
+- run `mvn clean test` to reproduce
+- remove the `<workingDirectory>` [setting](https://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html#forked-test-execution) to "fix"
