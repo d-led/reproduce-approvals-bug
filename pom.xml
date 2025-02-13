@@ -56,6 +56,9 @@
 <!--                 fork isolation: https://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html#forked-test-execution-->
                     <!-- this setting makes the test fail-->
                     <workingDirectory>target/fork_dir_${surefire.forkNumber}</workingDirectory>
+                    <systemPropertyVariables>
+                        <APPROVALTESTS_PROJECT_DIRECTORY>${project.basedir}</APPROVALTESTS_PROJECT_DIRECTORY>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
             <plugin>
